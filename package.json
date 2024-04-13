@@ -3,17 +3,30 @@
   "description": "Set up a Web graphics project blazingly fast!",
   "version": "0.1.0",
   "author": "Loïc Chen <ming.crepuscular@gmail.com>",
-  "scripts": {
-    "build": "tsup src/cli.ts --minify",
-    "clean": "shx rm -rf dist",
-    "dev": "tsup src/cli.ts --watch",
-    "prepublishOnly": "npm run clean && npm run build"
+  "homepage": "https://github.com/painfulexistence/create-gfx",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:painfulexistence/create-gfx.git"
   },
+  "keywords": [
+    "webgl",
+    "webgpu",
+    "pixi",
+    "three",
+    "babylon",
+    "p5"
+  ],
   "bin": "dist/cli.js",
   "files": [
     "dist",
     "templates"
   ],
+  "scripts": {
+    "dev": "tsup src/cli.ts --watch",
+    "build": "tsup src/cli.ts --minify",
+    "clean": "shx rm -rf dist",
+    "prepublishOnly": "bun run clean && bun run build"
+  },
   "devDependencies": {
     "@types/node": "^17.0.29",
     "shx": "^0.3.4",
