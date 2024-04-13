@@ -35,6 +35,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "create-create-app": "^7.3.0"
+    "create-create-x": "^0.1.0"
   }
 }
