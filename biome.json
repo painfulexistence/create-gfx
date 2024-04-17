@@ -1,5 +1,17 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.7.0/schema.json",
+  "files": {
+    "ignore": [
+      "**/*.md",
+      "**/*.yml",
+      "**/*.toml",
+      "**/.prettierrc",
+      "**/.editorconfig",
+      "templates",
+      ".github/",
+      ".devcontainer"
+    ]
+  },
   "formatter": {
     "enabled": true,
     "formatWithErrors": false,
@@ -7,17 +19,7 @@
     "indentWidth": 2,
     "lineEnding": "lf",
     "lineWidth": 80,
-    "attributePosition": "auto",
-    "ignore": [
-      "**/*.md",
-      "**/*.yml",
-      "**/*.toml",
-      "**/.prettierrc",
-      "**/.editorconfig",
-      "templates/",
-      ".github/",
-      ".devcontainer"
-    ]
+    "attributePosition": "auto"
   },
   "organizeImports": { "enabled": true },
   "linter": { "enabled": true, "rules": { "recommended": true } },
