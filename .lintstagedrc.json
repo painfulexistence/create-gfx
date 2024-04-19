@@ -1,10 +1,5 @@
 {
   "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
-    "bunx biome check --files-ignore-unknown=true",
-    "bunx biome check --apply --no-errors-on-unmatched",
-    "bunx biome check --apply --organize-imports-enabled=false --no-errors-on-unmatched",
-    "bunx biome check --apply-unsafe --no-errors-on-unmatched",
-    "bunx biome format --write --no-errors-on-unmatched",
-    "bunx biome lint --apply --no-errors-on-unmatched"
+    "bunx biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true --organize-imports-enabled=true"
   ]
 }
