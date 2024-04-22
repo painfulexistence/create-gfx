@@ -8,7 +8,15 @@
     "type": "git",
     "url": "git@github.com:painfulexistence/create-gfx.git"
   },
-  "keywords": ["webgl", "webgpu", "pixi", "three", "babylon", "p5"],
+  "keywords": [
+    "webgl",
+    "webgpu",
+    "pixi",
+    "three",
+    "babylon",
+    "p5",
+    "motion-canvas"
+  ],
   "bin": "dist/cli.js",
   "files": ["dist", "templates"],
   "scripts": {
