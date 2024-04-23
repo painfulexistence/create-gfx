@@ -1,0 +1,8 @@
+*.md
+*.yml
+*.toml
+.prettierrc
+.editorconfig
+
+.github/
+.devcontainer
