@@ -15,7 +15,8 @@
     "three",
     "babylon",
     "p5",
-    "motion-canvas"
+    "motion-canvas",
+    "orillusion"
   ],
   "bin": "dist/cli.js",
   "files": ["dist", "templates"],
