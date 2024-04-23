@@ -1,7 +1,7 @@
 {
   "name": "create-gfx",
   "description": "Set up a Web graphics project blazingly fast!",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "author": "Loïc Chen <ming.crepuscular@gmail.com>",
   "homepage": "https://github.com/painfulexistence/create-gfx",
   "repository": {
