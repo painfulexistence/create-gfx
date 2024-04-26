@@ -34,7 +34,7 @@ const App = () => {
   }, []);
 
   return (
-    <canvas ref={canvasRef} style={{ width: 800, height: 450 }}/>
+    <canvas ref={canvasRef} style=\{{ width: 800, height: 450 }}/>
   )
 }
 
