@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 import { resolve } from "node:path";
-import { create } from "create-create-x";
+import chalk from "chalk";
+import { type AfterHookOptions, create } from "create-create-x";
 
 const templateRoot = resolve(__dirname, "..", "templates");
 
-const caveat = (answers) => {
+const caveat = (options: AfterHookOptions) => {
     return `
-        Done! Now run:
-        cd ${answers.name}
+        ${chalk.green("Done! ") + chalk.yellow("Now run:")}
+        ${chalk.blue("cd ") + chalk.blue(options.answers.name)}
+        ${chalk.blue("npm run dev")}
     `;
 };
 
