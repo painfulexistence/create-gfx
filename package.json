@@ -26,7 +26,8 @@
     "build": "tsup src/cli.ts --minify",
     "clean": "shx rm -rf dist",
     "prepublishOnly": "bun run clean && bun run build",
-    "release": "release-it"
+    "release": "release-it",
+    "demo": "vhs demo.tape"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.7.0",
