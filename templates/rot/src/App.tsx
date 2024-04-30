@@ -1,12 +1,25 @@
-import { useState } from 'react'
-import './App.css'
+import { useEffect, useRef } from 'react';
+import * as ROT from 'rot-js';
+import './App.css';
 
-function App() {
-  new ROT.Engine()
+const App = () => {
+  const rotContainerRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const display = new ROT.Display({
+      width: 80,
+      height: 30
+    });
+    rotContainerRef.current!.appendChild(display.getContainer()!);
+
+    display.draw(6, 0.5, 'Hello World!', '#fff', '#000');
+
+    return () => {
+      rotContainerRef.current!.removeChild(display.getContainer()!);
+    }
+  }, []);
+
   return (
-    <>
-
-    </>
+    <div ref={rotContainerRef} />
   )
 }
 

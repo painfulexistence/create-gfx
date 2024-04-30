@@ -16,7 +16,8 @@
     "babylon",
     "p5",
     "motion-canvas",
-    "orillusion"
+    "orillusion",
+    "rot-js"
   ],
   "bin": "dist/cli.js",
   "files": ["dist", "templates"],
